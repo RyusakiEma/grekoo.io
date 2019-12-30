@@ -1,0 +1,10 @@
+<div class="row justify-content-center">
+    <figure *ngFor="let image of images" class="col-md-6 mb-2">
+      <div class="view overlay">
+        <img src="{{image.img}}" class="img-fluid" alt="">
+        <div class="mask flex-center haves-effect waves-light">
+          <h4 class="white-text p-1 rgba-stylish-strong">{{image.title}}</h4>
+        </div>
+      </div>
+    </figure>
+</div>

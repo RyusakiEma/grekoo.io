@@ -6,17 +6,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
+import { routing, appRoutingProviders } from './app.routing';
 
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
+import { SublimacionComponent } from './components/sublimacion/sublimacion.component';
+import { ImpresionComponent } from './components/impresion/impresion.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SublimacionComponent,
+    ImpresionComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    routing,
     HttpClientModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),

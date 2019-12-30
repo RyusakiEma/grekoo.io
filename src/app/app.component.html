@@ -8,7 +8,7 @@
       <li>
         
           <a href="#">
-            <img  src="assets/logoNoFondo.png" class="img-fluid pt-3 pr-3 flex-center ml-auto mr-auto">
+            <img  src="assets/grekoo.png" class="img-fluid pt-3 pr-3 flex-center ml-auto mr-auto">
           </a>
         
       </li>
@@ -42,9 +42,9 @@
           <mdb-accordion [multiple]="false" aria-multiselectable="false">
 
             <!-- Simple link -->
-            <mdb-accordion-item href="#section1" class="no-collase">
+            <mdb-accordion-item href="#nosotros" class="no-collase">
               <mdb-accordion-item-head mdbWavesEffect>
-                <a href="#section1">Sobre Nosotros</a>
+                <a href="#nosotros">Sobre Nosotros</a>
               </mdb-accordion-item-head>
               <mdb-accordion-item-body></mdb-accordion-item-body>
             </mdb-accordion-item>
@@ -52,14 +52,14 @@
             <!-- Simple link -->
             <mdb-accordion-item class="no-collase">
               <mdb-accordion-item-head mdbWavesEffect>
-                <a href="#section2">Servicios</a>
+                <a href="#servicios">Servicios</a>
               </mdb-accordion-item-head>
               <mdb-accordion-item-body></mdb-accordion-item-body>
             </mdb-accordion-item>
 
             <mdb-accordion-item class="no-collase">
               <mdb-accordion-item-head mdbWavesEffect>
-                <a href="#section3">Productos</a>
+                <a href="#productos">Productos</a>
               </mdb-accordion-item-head>
               <mdb-accordion-item-body></mdb-accordion-item-body>
             </mdb-accordion-item>
@@ -76,10 +76,10 @@
    <mdb-navbar SideClass="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
               [containerInside]="false">
 
-    <navlinks class="navbar-container">
+    <navlinks class="clearfix d-inline-block d-sm-none navbar-container">
         <!-- SideNav slide-out button -->
-        <div>
-          <a (click)="sidenav.show()" class="button-collapse hidden-nav-button-collapse white-color">
+        <div class="">
+          <a  (click)="sidenav.show()" class="button-collapse hidden-nav-button-collapse white-color">
             <mdb-icon fas class="white-text" icon="bars"></mdb-icon>
           </a>
         </div>
@@ -87,25 +87,25 @@
       </navlinks>
 
     <mdb-navbar-brand>
-      <a class="navbar-brand" href="#section1">
-        <img src="assets/logoNoFondo.png" width="35" height="35" alt="" />
+      <a class="navbar-brand" href="#nosotros">
+        <img src="assets/grekoo.png" width="35" height="35" alt="" />
        <span class="pl-1">Grekoo</span></a>
       </mdb-navbar-brand>
 
     <navlinks>
       <ul class="nav navbar-nav nav-flex-icons  ie-double-nav ie-hidden-double-nav">
         <li class="nav-item">
-          <a href="#section1" class="nav-link waves-light" mdbWavesEffect
+          <a href="#nosotros" class="nav-link waves-light" mdbWavesEffect
             ><span class="clearfix d-none d-sm-inline-block">Sobre Nosotros</span></a
           >
         </li>
         <li class="nav-item">
-          <a href="#section2" class="nav-link waves-light" mdbWavesEffect
+          <a href="#servicios" class="nav-link waves-light" mdbWavesEffect
             ><span class="clearfix d-none d-sm-inline-block">Servicios</span></a
           >
         </li>
         <li class="nav-item">
-          <a href="#section3" class="nav-link waves-light" mdbWavesEffect>
+          <a href="#productos" class="nav-link waves-light" mdbWavesEffect>
               <span class="clearfix d-none d-sm-inline-block">Productos</span>
           </a>
         </li>
@@ -134,7 +134,7 @@
   <!-- Full Page Intro -->
   <div
     class="view"
-    id="section1"
+    id="nosotros"
     style="background-image: url('assets/banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
   >
     <!-- Mask & flexbox options-->
@@ -192,7 +192,7 @@
 
 <!--SERVICES SECTION-->
 <section>
-  <div id="section2">
+  <div id="servicios">
     <div class="container mb-5">
       <div class="flex-center flex-column  text-center mt-5">
         <h1 class="animated fadeIn mb-4  wow fadeInDown title-service">
@@ -301,7 +301,7 @@
 
 <!--PRODUCT SECTION-->
 <section>
-  <div id="section3">
+  <div id="productos">
     <div class="container mb-5">
       <div class="flex-center flex-column  text-center mt-5">
         <h1 class="animated fadeIn mb-4  wow fadeInDown title-service">
@@ -314,56 +314,17 @@
       </div>
       <hr />
 
-      <div class="row justify-content-center">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <mdb-card class="product-cards wow fadeIn" data-wow-delay="0.1s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/tazas.png"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-          </mdb-card>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <mdb-card class="product-cards wow fadeIn" data-wow-delay="0.1s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/mousepad.png"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-          </mdb-card>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <mdb-card class="product-cards wow fadeIn" data-wow-delay="0.1s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/camizaVinil.png"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-          </mdb-card>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <mdb-card class="product-cards wow fadeIn" data-wow-delay="0.1s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/camisa.jpg"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-          </mdb-card>
-        </div>
-      </div>
+      <ul class="nav justify-content-center py-4">
+        <li routerLinkActive="active" class="nav-item" [routerLink]="['/sublimacion']">
+            <a class="nav-link grey-text" href="#!">Sublimación</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item" [routerLink]="['/impresion']">
+            <a class="nav-link grey-text" href="#!">Impresión</a>
+        </li>
+      </ul>
+
+      <router-outlet></router-outlet>
+
     </div>
   </div>
 </section>
@@ -373,6 +334,11 @@
   <!-- Footer Elements -->
   <div class="container">
     <!-- Grid row-->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 mt-5">
+        <img src="assets/greeko-light.png" class="img-fluid" alt="">
+      </div>
+    </div>
     <div class="row">
       <!-- Grid column -->
       <div class="col-md-12 py-5">
@@ -413,7 +379,7 @@
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">
     © 2019 Copyright:
-    <a href="#"> Grekoo.com</a>
+    <a href="#">GrekooStudio.com</a>
   </div>
   <!-- Copyright -->
 </footer>
