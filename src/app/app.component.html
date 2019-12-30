@@ -162,7 +162,7 @@
               target="_blank"
               mdbWavesEffect
               ><mdb-icon fab icon="whatsapp" class="pr-1" size="lg"></mdb-icon>
-              Ecribenos</a
+              Escríbenos</a
             >
             <a
               mdbBtn
@@ -221,9 +221,6 @@
               </mdb-card-title>
 
               <!--Text-->
-              <mdb-card-text>
-                Breve descripcion de lo que se hace en este apartado
-              </mdb-card-text>
             </mdb-card-body>
           </mdb-card>
         </div>
@@ -243,20 +240,18 @@
               </mdb-card-title>
 
               <!--Text-->
-              <mdb-card-text>
-                Breve descripcion de lo que se hace en este apartado
-              </mdb-card-text>
             </mdb-card-body>
           </mdb-card>
         </div>
-        <div class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
+        <div  class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <a  [routerLink]="['/sublimacion']" (click)="goProducts();">
           <mdb-card class="service-card wow fadeIn" data-wow-delay="0.3s">
             <!--Card image-->
             <mdb-card-img
-              class="p-2"
-              src="assets/sublimacion.png"
-              alt="Card image cap"
-            ></mdb-card-img>
+            class="p-2"
+            src="assets/sublimacion.png"
+            alt="Card image cap"
+          ></mdb-card-img>
             <!--Card content-->
             <mdb-card-body class="text-center">
               <!--Title-->
@@ -265,11 +260,9 @@
               </mdb-card-title>
 
               <!--Text-->
-              <mdb-card-text>
-                Breve descripcion de lo que se hace en este apartado
-              </mdb-card-text>
             </mdb-card-body>
           </mdb-card>
+          </a>
         </div>
         <div class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
           <mdb-card class="service-card wow fadeIn" data-wow-delay="0.4s">
@@ -287,9 +280,6 @@
               </mdb-card-title>
 
               <!--Text-->
-              <mdb-card-text>
-                Breve descripcion de lo que se hace en este apartado
-              </mdb-card-text>
             </mdb-card-body>
           </mdb-card>
         </div>
@@ -315,7 +305,7 @@
       <hr />
 
       <ul class="nav justify-content-center py-4">
-        <li routerLinkActive="active" class="nav-item" [routerLink]="['/sublimacion']">
+        <li routerLinkActive="active" id="sublimacion" class="nav-item" [routerLink]="['/sublimacion']">
             <a class="nav-link grey-text" href="#!">Sublimación</a>
         </li>
         <li routerLinkActive="active" class="nav-item" [routerLink]="['/impresion']">

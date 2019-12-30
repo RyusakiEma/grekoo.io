@@ -38,4 +38,8 @@ export class AppComponent implements OnInit {
    
   }
 
+  goProducts(){
+    $("html, body").animate({ scrollTop: "1500" });
+  }
+
 }
