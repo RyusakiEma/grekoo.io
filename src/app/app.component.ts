@@ -42,4 +42,8 @@ export class AppComponent implements OnInit {
     $("html, body").animate({ scrollTop: "1500" });
   }
 
+  noReload(){
+    return false;
+  }
+
 }

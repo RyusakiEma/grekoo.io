@@ -290,34 +290,36 @@
 <!--END SERVICES SECTION-->
 
 <!--PRODUCT SECTION-->
-<section>
-  <div id="productos">
-    <div class="container mb-5">
-      <div class="flex-center flex-column  text-center mt-5">
-        <h1 class="animated fadeIn mb-4  wow fadeInDown title-service">
-          Productos
-        </h1>
-        <h5 class="animated fadeIn mb-3 wow fadeInDown text-service">
-          <span class="deep-orange-text">Se</span> la diferencia con productos
-          auténticos como <span class="deep-orange-text">tu</span>
-        </h5>
+<main>
+  <section>
+    <div id="productos">
+      <div class="container mb-5">
+        <div class="flex-center flex-column  text-center mt-5">
+          <h1 class="animated fadeIn mb-4  wow fadeInDown title-service">
+            Productos
+          </h1>
+          <h5 class="animated fadeIn mb-3 wow fadeInDown text-service">
+            <span class="deep-orange-text">Se</span> la diferencia con productos
+            auténticos como <span class="deep-orange-text">tu</span>
+          </h5>
+        </div>
+        <hr />
+  
+        <ul class="nav justify-content-center py-4">
+          <li routerLinkActive="active" id="sublimacion" class="nav-item" [routerLink]="['/sublimacion']">
+              <a class="nav-link grey-text" href="#" (click)="noReload();">Sublimación</a>
+          </li>
+          <li routerLinkActive="active" class="nav-item" [routerLink]="['/impresion']">
+              <a class="nav-link grey-text" href="#" (click)="noReload();">Impresión</a>
+          </li>
+        </ul>
+  
+        <router-outlet></router-outlet>
+  
       </div>
-      <hr />
-
-      <ul class="nav justify-content-center py-4">
-        <li routerLinkActive="active" id="sublimacion" class="nav-item" [routerLink]="['/sublimacion']">
-            <a class="nav-link grey-text" href="#!">Sublimación</a>
-        </li>
-        <li routerLinkActive="active" class="nav-item" [routerLink]="['/impresion']">
-            <a class="nav-link grey-text" href="#!">Impresión</a>
-        </li>
-      </ul>
-
-      <router-outlet></router-outlet>
-
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <!-- Footer -->
 <footer class="page-footer font-small footer-bkcolor">
@@ -369,7 +371,7 @@
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">
     © 2019 Copyright:
-    <a href="#">GrekooStudio.com</a>
+    <a href="https://grekoostudio.com">GrekooStudio.com</a>
   </div>
   <!-- Copyright -->
 </footer>

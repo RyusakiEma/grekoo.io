@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./impresion.component.scss']
 })
 export class ImpresionComponent implements OnInit {
-
+public loaded;
   images = [
     { img: "assets/impresion/1.jpg", title: "Broches"},
     { img: "assets/impresion/2.jpg", title: "Carnet"},
@@ -24,6 +24,16 @@ export class ImpresionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  loading(e){
+
+    if(e.isTrusted == true){
+      this.loaded = true;
+    }else{
+      this.loaded = false;
+    }
+    console.log(this.loaded);
   }
 
 }
