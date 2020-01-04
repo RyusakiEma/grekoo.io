@@ -3,9 +3,6 @@
   border-radius: 0 !important;
 }
 
-.lato-text {
-  font-family: "Lato", sans-serif;
-}
 
 .top-nav-collapse {
   background-color: #090c19 !important;
@@ -13,4 +10,39 @@
 
 .footer-bkcolor {
   background-color: #090c19;
+}
+
+@media (min-width: 991px) {
+  .lato-text {
+    // font-family: "Lato", sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+   }
+   
+   .sub-title{
+     font-family: 'Oswald', sans-serif;
+     font-size: 35px;
+   }
+
+  .icon-size{
+    position: relative;
+    font-size: 1.2rem !important;
+  }
+  
+  .bottom-size{
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 768px){
+  .lato-text {
+    // font-family: "Lato", sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+   }
+   
+   .sub-title{
+     font-family: 'Oswald', sans-serif;
+     font-size: 25px;
+   }
 }

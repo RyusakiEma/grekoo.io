@@ -14,6 +14,10 @@ header,
   .view {
     height: auto;
   }
+  .call-btn{
+    padding-right: 45px !important;
+    padding-left: 45px !important;
+  }
 }
 
 @media (max-width: 740px) {
@@ -123,3 +127,4 @@ a:hover{
   border-bottom: 3px solid;
   border-color: #21618C;
 }
+

@@ -1,0 +1,15 @@
+<div class="row justify-content-center">
+  <div *ngFor="let image of images" class="col-xs-12 col-sm-12 col-lg-4 mb-2 img-container text-center img-product">
+    <p class="white-text p-1 image-title rgba-stylish-strong">{{image.title}}</p>
+    <figure >
+      <div *ngIf="loaded != true"  class="spinner">
+        <mdb-spinner class="p-5" spinnerColor="blue"></mdb-spinner>
+      </div>
+      <div class="view text-center">
+        <img src="{{image.img}}" (load)="loading($event)" alt="">
+        <div class="mask flex-center haves-effect waves-light">
+        </div>
+      </div>
+    </figure>
+  </div>
+</div>

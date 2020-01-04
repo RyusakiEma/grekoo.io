@@ -86,14 +86,20 @@
         <!--/. SideNav slide-out button -->
       </navlinks>
 
-    <mdb-navbar-brand>
+    <mdb-navbar-brand class="d-sm-none">
       <a class="navbar-brand" href="#nosotros">
-        <img src="assets/grekoo.png" width="35" height="35" alt="" />
+        <img src="assets/grekoo.png" width="30" height="30" alt="" />
        <span class="pl-1">Grekoo</span></a>
       </mdb-navbar-brand>
 
     <navlinks>
-      <ul class="nav navbar-nav nav-flex-icons  ie-double-nav ie-hidden-double-nav">
+      <ul class="nav ml-auto mr-auto   navbar-nav nav-flex-icons ie-double-nav ie-hidden-double-nav">
+        <li class="nav-item  d-none d-sm-inline-block mr-2">
+          <a href="#" (click)="noReload();">
+            <img src="assets/grekoo.png" width="30" height="30" alt="" />
+            <span style="line-height: 2.5;" class="pl-1">Grekoo</span>
+          </a>
+        </li>
         <li class="nav-item">
           <a href="#nosotros" class="nav-link waves-light" mdbWavesEffect
             ><span class="clearfix d-none d-sm-inline-block">Sobre Nosotros</span></a
@@ -153,7 +159,7 @@
               ideas
             </h1>
             <hr class="hr-light" />
-            <h5 class="mb-3">Te ofrecemos todo en le rubro de la publicidad</h5>
+            <h5 class="mb-3 sub-title">Te ofrecemos todo en le rubro de la publicidad</h5>
             <a
               mdbBtn
               href="https://wa.me/50582878673"
@@ -161,7 +167,8 @@
               outline="true"
               target="_blank"
               mdbWavesEffect
-              ><mdb-icon fab icon="whatsapp" class="pr-1" size="lg"></mdb-icon>
+              class="bottom-size"
+              ><mdb-icon fab icon="whatsapp"class="icon-size pr-1" size="lg"></mdb-icon>
               Escríbenos</a
             >
             <a
@@ -171,7 +178,8 @@
               outline="true"
               target="_blank"
               mdbWavesEffect
-              ><mdb-icon fas icon="phone" class="pr-1" size="lg"></mdb-icon>
+              class="bottom-size call-btn"
+              ><mdb-icon fas icon="phone" class="icon-size pr-1" size="lg"></mdb-icon>
               Llamar</a
             >
           </div>
@@ -206,57 +214,61 @@
 
       <div class="row justify-content-between">
         <div class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-          <mdb-card class="service-card wow fadeIn" data-wow-delay="0.1s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/diseno.png"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-            <mdb-card-body class="text-center">
-              <!--Title-->
-              <mdb-card-title>
-                <h4 class="service-title">Diseño</h4>
-              </mdb-card-title>
-
-              <!--Text-->
-            </mdb-card-body>
-          </mdb-card>
+          <a [routerLink]="['']" (click)="goProducts();">
+            <mdb-card class="service-card  wow fadeIn" data-wow-delay="0.1s">
+              <!--Card image-->
+              <mdb-card-img
+                class="p-2"
+                src="assets/sublimacion.png"
+                alt="Card image cap"
+              ></mdb-card-img>
+              <!--Card content-->
+              <mdb-card-body class="text-center">
+                <!--Title-->
+                <mdb-card-title style="padding-bottom: -20px;">
+                  <h4 class="service-title">Sublimación</h4>
+                </mdb-card-title>
+  
+                <!--Text-->
+              </mdb-card-body>
+            </mdb-card>
+          </a>
         </div>
         <div class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-          <mdb-card class="service-card wow fadeIn" data-wow-delay="0.2s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/serigrafia.png"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-            <mdb-card-body class="text-center">
-              <!--Title-->
-              <mdb-card-title>
-                <h4 class="service-title">Serigrafía</h4>
-              </mdb-card-title>
-
-              <!--Text-->
-            </mdb-card-body>
-          </mdb-card>
+          <a [routerLink]="['/bordado']" (click)="goProducts();">
+            <mdb-card class="service-card wow fadeIn" data-wow-delay="0.2s">
+              <!--Card image-->
+              <mdb-card-img
+                class="p-2"
+                src="assets/bordado.png"
+                alt="Card image cap"
+              ></mdb-card-img>
+              <!--Card content-->
+              <mdb-card-body class="text-center">
+                <!--Title-->
+                <mdb-card-title>
+                  <h4 class="service-title">Bordado</h4>
+                </mdb-card-title>
+  
+                <!--Text-->
+              </mdb-card-body>
+            </mdb-card>
+          </a>
         </div>
         <div  class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-          <a  [routerLink]="['/sublimacion']" (click)="goProducts();">
+          <a  [routerLink]="['/impresion']" (click)="goProducts();">
           <mdb-card class="service-card wow fadeIn" data-wow-delay="0.3s">
             <!--Card image-->
             <mdb-card-img
             class="p-2"
-            src="assets/sublimacion.png"
+            src="assets/impresion.png"
             alt="Card image cap"
           ></mdb-card-img>
             <!--Card content-->
             <mdb-card-body class="text-center">
               <!--Title-->
               <mdb-card-title>
-                <h4 class="service-title">Sublimación</h4>
+                <h4 class="service-title">Impresión</h4>
               </mdb-card-title>
 
               <!--Text-->
@@ -265,23 +277,25 @@
           </a>
         </div>
         <div class="mb-2 service-col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-          <mdb-card class="service-card wow fadeIn" data-wow-delay="0.4s">
-            <!--Card image-->
-            <mdb-card-img
-              class="p-2"
-              src="assets/bordado.png"
-              alt="Card image cap"
-            ></mdb-card-img>
-            <!--Card content-->
-            <mdb-card-body class="text-center">
-              <!--Title-->
-              <mdb-card-title>
-                <h4 class="service-title">Bordado</h4>
-              </mdb-card-title>
-
-              <!--Text-->
-            </mdb-card-body>
-          </mdb-card>
+          <a [routerLink]="['/serigrafia']" (click)="goProducts();">
+            <mdb-card class="service-card wow fadeIn" data-wow-delay="0.4s">
+              <!--Card image-->
+              <mdb-card-img
+                class="p-2"
+                src="assets/serigrafia.png"
+                alt="Card image cap"
+              ></mdb-card-img>
+              <!--Card content-->
+              <mdb-card-body class="text-center">
+                <!--Title-->
+                <mdb-card-title>
+                  <h4 class="service-title">Serigrafía</h4>
+                </mdb-card-title>
+  
+                <!--Text-->
+              </mdb-card-body>
+            </mdb-card>
+          </a>
         </div>
       </div>
     </div>
@@ -306,12 +320,18 @@
         <hr />
   
         <ul class="nav justify-content-center py-4">
-          <li routerLinkActive="active" id="sublimacion" class="nav-item" [routerLink]="['/sublimacion']">
+          <li routerLinkActive="active" id="sublimacion" class="nav-item" [routerLink]="['']" [routerLinkActiveOptions]="{exact: true}">
               <a class="nav-link grey-text" href="#" (click)="noReload();">Sublimación</a>
           </li>
-          <li routerLinkActive="active" class="nav-item" [routerLink]="['/impresion']">
+          <li routerLinkActive="active" class="nav-item" [routerLink]="['bordado']">
+            <a class="nav-link grey-text" href="#" (click)="noReload();">Bordado</a>
+        </li>
+          <li routerLinkActive="active" class="nav-item" [routerLink]="['impresion']">
               <a class="nav-link grey-text" href="#" (click)="noReload();">Impresión</a>
           </li>
+          <li routerLinkActive="active" class="nav-item" [routerLink]="['serigrafia']">
+            <a class="nav-link grey-text" href="#" (click)="noReload();">Serigrafía</a>
+        </li>
         </ul>
   
         <router-outlet></router-outlet>

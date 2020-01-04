@@ -11,12 +11,16 @@ import { routing, appRoutingProviders } from './app.routing';
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
 import { SublimacionComponent } from './components/sublimacion/sublimacion.component';
 import { ImpresionComponent } from './components/impresion/impresion.component';
+import { BordadoComponent } from './components/bordado/bordado.component';
+import { SerigrafiaComponent } from './components/serigrafia/serigrafia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SublimacionComponent,
-    ImpresionComponent
+    ImpresionComponent,
+    BordadoComponent,
+    SerigrafiaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,15 @@
 <div class="row justify-content-center">
-    <figure *ngFor="let image of images" class="col-md-6 mb-2 text-center">
+  <div *ngFor="let image of images" class="col-md-5 mb-2 text-center img-container">
+    <h4 class="white-text p-1 image-title rgba-stylish-strong">{{image.title}}</h4>
+    <figure>
       <div *ngIf="loaded != true"  class="spinner">
         <mdb-spinner class="p-5" spinnerColor="blue"></mdb-spinner>
       </div>
       <div class="view overlay">
         <img src="{{image.img}}" (load)="loading($event)" class="img-fluid" alt="">
         <div class="mask flex-center haves-effect waves-light">
-          <h4 class="white-text p-1 rgba-stylish-strong">{{image.title}}</h4>
         </div>
       </div>
     </figure>
+  </div>
 </div>

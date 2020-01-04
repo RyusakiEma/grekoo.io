@@ -1,0 +1,32 @@
+.product-img-container{
+    width: 200px;
+    height: 200px;
+}
+
+.view{
+    max-height: 500px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.spinner{
+    padding: 80px;
+}
+
+.img-container{
+    border: 1px solid #CCD1D1;
+    margin-right: 2px;
+}
+
+.image-title{
+    position: absolute !important;
+    z-index: 2;
+    margin-left: 0;
+    bottom: 0;
+    left: 0;
+}
