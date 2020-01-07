@@ -16,7 +16,7 @@ export class BordadoComponent implements OnInit {
     { img: "assets/bordado/5.png", title: "Camisas U-WAFFIT"},
     { img: "assets/bordado/6.png", title: "Delantales bordados"},
     { img: "assets/bordado/7.png", title: "Toallas bordadas"},
-    { img: "assets/bordado/8.png", title: "Goras de lona"},
+    { img: "assets/bordado/8.png", title: "Gorras de lana o pre-lavadas"},
   ];
 
   constructor() { }

@@ -12,15 +12,21 @@
   background-color: #090c19;
 }
 
+.lato-text{
+  font-family: 'Oswald', sans-serif;
+}
+
+.sub-title{
+  font-family: 'Oswald', sans-serif;
+}
+
 @media (min-width: 991px) {
   .lato-text {
     // font-family: "Lato", sans-serif;
-    font-family: 'Oswald', sans-serif;
     font-size: 65px;
    }
    
    .sub-title{
-     font-family: 'Oswald', sans-serif;
      font-size: 35px;
    }
 
