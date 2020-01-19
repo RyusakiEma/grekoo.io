@@ -6,7 +6,6 @@ header,
 .view {
   min-height: 100vh;
 }
-
 @media (max-width: 576px) {
   html,
   body,
@@ -126,5 +125,9 @@ a:hover{
 .active{
   border-bottom: 3px solid;
   border-color: #21618C;
+}
+
+.phon-icon{
+  transform: translate(0, 3px) rotate(90deg), ;
 }
 

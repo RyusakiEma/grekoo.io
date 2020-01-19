@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+  src: url(assets/fonts/gadugi.ttf);
+  font-family: gadugi;
+}
+
+
 .card-intro {
   border-radius: 0 !important;
 }
@@ -16,14 +22,22 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.main-text{
+  font-family: gadugi, sans-serif;
+}
+
 .sub-title{
-  font-family: 'Oswald', sans-serif;
+  font-family: gadugi, sans-serif;
 }
 
 @media (min-width: 991px) {
   .lato-text {
     // font-family: "Lato", sans-serif;
     font-size: 65px;
+   }
+
+   .main-text{
+     font-size: 50px;
    }
    
    .sub-title{
@@ -48,7 +62,6 @@
    }
    
    .sub-title{
-     font-family: 'Oswald', sans-serif;
      font-size: 25px;
    }
 }
